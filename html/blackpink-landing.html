@@ -6,61 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BLACKPINK</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/portfolio/css/blackpink.css" type="text/css">
+  <!-- swiper 슬라이드 -->
+  <link rel="stylesheet" href="/portfolio/css/blackpink-landing.css" type="text/css">
+  <link rel="stylesheet" media="all and (max-width: 1299px)" href="/portfolio/css/blackpink-landing-t-style.css">
+  <!-- 태블릿 반응형 -->
+  <link rel="stylesheet" media="all and (max-width: 640px)" href="/portfolio/css/blackpink-landing-m-style.css">
+  <!-- 모바일 반응형 -->
 </head>
 
 <body>
-  <header>
-    <a href="#">
+  <!-- 헤더 -->
+  <header class="hed">
+    <a href="/portfolio/html/blackpink-landing.html">
       <img src="/portfolio/image/blackpink/logo-blackpink-pk.svg" alt="블랙핑크 로고">
     </a>
-    <select>
-      <option>KO</option>
-      <option>EN</option>
-      <option>JP</option>
-      <option>CN</option>
-    </select>
+    <div class="menu">
+      <span><a href="/portfolio/html/blackpink-landing.html">MAIN</a></span>
+      <span><a href="/portfolio/html/blackpink-profile.html">PROFILE</a></span>
+      <span>DISCOGRAPHY</span>
+      <span>GOODS</span>
+      <span> VIDEO</span>
+    </div>
+    <div>
+      <!-- 언어선택 -->
+      <select>
+        <option>KO</option>
+        <option>EN</option>
+        <option>JP</option>
+        <option>CN</option>
+      </select>
+      <!-- 메뉴 버튼 -->
+      <span class="material-symbols-outlined ico-open">
+        menu
+      </span>
+      <span class="material-symbols-outlined ico-close">
+        close
+      </span>
+    </div>
   </header>
+  <!-- /헤더 -->
+  <!-- 풀스크린 슬라이더 -->
   <div class="swiper landing-mv">
     <div class="swiper-wrapper">
       <div class="swiper-slide">Slide 1
-        <iframe class="slide-mv" src="https://www.youtube.com/embed/POe9SOEKotk?si=b3LBFs7SZGzLxmZh"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video src="/portfolio/video/blackpink/blackpink-landing.mp4" loop muted autoplay>해당 영상의 경로가 올바르지 않습니다.</video>
       </div>
       <div class="swiper-slide">Slide 2
-        <iframe class="slide-mv" src="https://www.youtube.com/embed/XEb5u0lJARU?si=9kdEBQDKjCSWU5Mu"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video src="/portfolio/video/blackpink/ConceptTeaser-all.mp4" loop muted autoplay>해당 영상의 경로가 올바르지 않습니다.</video>
       </div>
       <div class="swiper-slide">Slide 3
-        <iframe class="slide-mv" src="https://www.youtube.com/embed/YzigQ-93ig8?si=Y_Tck1T-fy15Q2o_"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">Slide 4
-        <iframe class="slide-mv" src="https://www.youtube.com/embed/YudHcBIxlYw?si=I86h8aNwh9IlL0Vi"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="swiper-slide">Slide 5
-        <iframe class="swiper-slide" src="https://www.youtube.com/embed/dyRsYk0LyA8?si=7__oXUJqERWWqti7"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video src="/portfolio/video/blackpink/blackpink-bpm-teaser.mp4" loop muted autoplay>해당 영상의 경로가 올바르지
+          않습니다.</video>
       </div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
-
+  <!-- /풀스크린 슬라이더 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/portfolio/js/blackpink.js"></script>
+  <script src="/portfolio/js/blackpink/blackpink.js"></script>
 </body>
 
 </html>

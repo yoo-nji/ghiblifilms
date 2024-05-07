@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+body, header {
+  min-width: 640px;
+  /* 최소 너비 추가 */
+}
