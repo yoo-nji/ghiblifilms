@@ -2,7 +2,6 @@
 /*------- 랜딩 페이지 태블릿 버전 -------*/
 
 /* ------- 헤더 ------- */
-
 .hed.on {
   display: flex;
   background-color: rgba(0, 0, 0, 0.8);
@@ -34,8 +33,13 @@
 /* 셀렉트랑 ico-set 박스 */
 header div:last-of-type {
   display: flex;
+  align-items: center;
   height: 33px;
   gap: 30px;
-  align-items: center;
 }
+
+select {
+  margin: 0 0 0 93px;
+}
+/* ico 추가되면서 로고랑 너비 안 맞아서 기존(pc.ver)에 줬던 마진 수정함 */
 /* ------- /헤더 ------- */
