@@ -2,12 +2,24 @@
 /*------- 프로필페이지 모바일 버전 -------*/
 
 body {
-  min-width: 440px;
+  min-width: 320px;
 }
 /* 최소값 */
 /* ------- 헤더 ------- */
 .hed {
-  min-width: 440px;
+  min-width: 320px;
+  padding: 10px;
+}
+.hed.on {
+  min-width: 320px;
+  padding: 18px 10px 0;
+}
+
+select {
+  margin: 0;
+}
+header div:last-of-type {
+  gap: 10px;
 }
 
 /* ------- /헤더 ------- */
