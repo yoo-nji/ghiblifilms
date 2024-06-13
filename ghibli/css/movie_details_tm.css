@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* 영화상세페이지 태블릿, 모바일 가로 480-767 */
+
+/* sec */
+.topBanner {
+  height: 250px;
+}
+
+/* inner */
+.inner {
+  padding: 20px 30px;
+  gap: 40px;
+}
+
+.movieDetails {
+  width: 100%;
+  display: flex;
+  padding: 170px 0 0 0;
+  gap: 10px;
+}
+.moviePoster {
+  width: 166px;
+  height: 249px;
+  top: -108px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* content */
+.content {
+  gap: 15px;
+}
+.content > h1 {
+  font-size: 28px;
+  line-height: 42px;
+}
+.content > .detailsText {
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.detailsText div:last-child > div {
+  font-size: 12px;
+  line-height: 21px;
+}
+.detailsText div:last-child > div > span:first-child {
+  width: 70px;
+}
+
+/* review */
+.review {
+  gap: 20px;
+}
+.reviewInputBox > h2 {
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* review form */
+#reviewForm {
+  padding: 10px 30px;
+  gap: 10px;
+}
+
+/* review box */
+.reviewBoxSet {
+  gap: 20px;
+}

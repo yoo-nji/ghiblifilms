@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 헤더 태블릿, 모바일(min320px)*/
+header.on {
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: #214436 !important;
+  padding: 0;
+  gap: 30px;
+}
+header > a:first-child {
+  position: fixed;
+  top: 9px;
+  left: 40px;
+}
+header .navSet {
+  display: none;
+}
+header .navSet.on {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.navSet > a {
+  padding: 10px 0;
+  text-align: center;
+}
+.navSet > a:hover {
+  background: #0F1F19;
+  border-bottom: 2px solid #0F1F19;
+}
+.loginBt {
+  display: none;
+}
+.loginBt.on {
+  display: flex;
+}
+header .navIco {
+  display: block;
+}
+header .navIco {
+  position: fixed;
+  top: 7px;
+  right: 40px;
+}

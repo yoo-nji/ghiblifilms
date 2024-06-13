@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 영화검색페이지 태블릿 768-1023 */
+
+/* 검색박스 */
+.sec {
+  width: 100%;
+  padding-inline: 30px;
+  gap: 80px;
+}
+.searchBox > div > input {
+  font-size: 16px;
+}
+
+/* 영화박스 */
+#movieBoxSet {
+  gap: 20px 20px;
+  margin: 0 auto;
+  width: 640px;
+}

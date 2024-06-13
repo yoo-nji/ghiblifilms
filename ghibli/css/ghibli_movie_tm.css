@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 영화검색페이지 태블릿, 모바일 가로 480-767 */
+
+.sec {
+  padding: 50px 30px;
+  gap: 40px;
+}
+.searchBox img {
+  width: 142px;
+  height: 104px;
+}
+.searchBox > div {
+  width: 100%;
+  max-width: 450px;
+}
+/* 영화박스 */
+#movieBoxSet {
+  width: 420px;
+}

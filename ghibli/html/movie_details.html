@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ghibli movie details</title>
+  <!-- header pc -->
+  <link rel="stylesheet" href="/portfolio/ghibli/css/ghibli_header.css" type="text/css">
+  <!-- header 태블릿,모바일 -->
+  <link rel="stylesheet" media="all and (max-width: 1023px)" href="/portfolio/ghibli/css/ghibli_header_tm.css">
+  <!-- sec -->
+  <!-- css pc,태블릿 가로 1024- -->
+  <link rel="stylesheet" href="/portfolio/ghibli/css/movie_details.css" type="text/css">
+  <!-- css 태블릿 768-1023 -->
+  <link rel="stylesheet" media="all and (max-width: 1023px)" href="/portfolio/ghibli/css/movie_details_t.css">
+  <!-- css 태블릿,모바일 가로 480-767 -->
+  <link rel="stylesheet" media="all and (max-width: 767px)" href="/portfolio/ghibli/css/movie_details_tm.css">
+  <!-- css 모바일 320-480 -->
+  <link rel="stylesheet" media="all and (max-width: 480px)" href="/portfolio/ghibli/css/movie_details_mo.css">
+</head>
+
+<body>
+  <header>
+    <a href="/portfolio/ghibli/html/ghibli_main.html"><img src="/portfolio/ghibli/img/home_ico.png" alt="#"></a>
+    <div class="navSet">
+      <a href="/portfolio/ghibli/html/ghibli_movie.html">MOVIE</a>
+      <a href="#">HISTORY</a>
+      <a href="#">GAME</a>
+      <a href="#">TRAILER</a>
+    </div>
+    <a class="loginBt" href="#">LOGIN</a>
+    <span class="material-symbols-outlined navIco">menu</span>
+  </header>
+  <div class="sec">
+    <div class="topBanner">
+      topBanner
+    </div>
+    <div class="inner">
+      <!-- 영화 정보 -->
+      <div class="movieDetails">
+        <div class="moviePoster">
+          Poster img
+        </div>
+        <div class="content">
+          <h1>
+            My Neighbor Totoro
+          </h1>
+          <div class="detailsText">
+            <div>
+              Two sisters move to the country with their father in order to be closer to their hospitalized mother, and
+              discover the
+              surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away
+              from home, the
+              older sister seeks help from the spirits to find her.
+            </div>
+            <div>
+              <div>
+                <span>
+                  release date
+                </span>
+                <span>
+                  1988
+                </span>
+              </div>
+              <div>
+                <span>
+                  running time
+                </span>
+                <span>
+                  86
+                </span>
+              </div>
+              <div>
+                <span>
+                  director
+                </span>
+                <span>
+                  Hayao Miyazaki
+                </span>
+              </div>
+              <div>
+                <span>
+                  producer
+                </span>
+                <span>
+                  Hayao Miyazaki
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 댓글 -->
+      <div class="review">
+        <div class="reviewInputBox">
+          <h2>Review<span id="reviewCount">5</span></h2>
+          <!-- 리뷰 개수를 세어준 후 span에 넣기 -->
+          <form id="reviewForm">
+            <div class="userId">gohoom</div>
+            <input type="hidden" name="userId" value="userId">
+            <!-- 유저 아이디를 폼에 같이 전송시킬 건데 사용자에겐 보이지 않게 함 -->
+            <input type="text" name="review" placeholder="Please enter your review." required maxlength="200">
+            <div>
+              <div class="charCount" id="charCount">0/200</div>
+              <button type="submit">등록</button>
+            </div>
+          </form>
+        </div>
+        <div class="reviewBoxSet">
+          <div id="reviewBox">
+            <div class="reviewText">
+              <div>hi043</div>
+              <div>재밌다 ㅠㅠ</div>
+              <div>
+                <span>2024-04-22 16:48</span>
+                <button>신고</button>
+              </div>
+            </div>
+            <div class="btnBox">
+              <button>
+                수정
+              </button>
+              <button>
+                삭제
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <script src="/portfolio/ghibli/js/ghibli_header.js"></script>
+  <!-- reviw form -->
+  <script src="/portfolio/ghibli/js/ghibli_reviewform.js"></script>
+</body>
+
+</html>

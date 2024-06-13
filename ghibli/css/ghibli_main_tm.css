@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 메인페이지 태블릿, 모바일 320-767 */
+
+/* 메인 헤더 css 따로 설정 */
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #214436;
+}
+
+/* sec */
+.sec {
+  flex-direction: column;
+  min-width: 320px;
+  gap: 20px;
+  align-items: center;
+}
+#mainSec {
+  background: url(/portfolio/ghibli/img/ghibli.png) no-repeat 50%/20%;
+  height: 300px;
+}
+.sloganBox {
+  gap: 10px;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  background-color: transparent;
+  color: #000;
+  position: initial;
+}
+.sloganText {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sloganText::after, .sloganText::before {
+  font-size: 16px;
+}
+.sloganText2 {
+  font-size: 13px;
+  line-height: 13px;
+}
