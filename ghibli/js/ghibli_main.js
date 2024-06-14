@@ -1,5 +1,5 @@
 // 새로고침시 랜덤 배경,텍스트
-let ghibliSlogan = fetch('/portfolio/ghibli/js/ghibli_main_slogan.json');
+let ghibliSlogan = fetch('slogan.json');
 // 파일 읽어와라
 // console.log(test);
 
