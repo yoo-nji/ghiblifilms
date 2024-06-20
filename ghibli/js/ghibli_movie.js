@@ -10,23 +10,19 @@ fetch('https://ghibliapi.vercel.app/films')
     movieBoxSet.innerHTML = '';
     movieTitles.innerHTML = ''; // datalist 비우기
 
-    //api 불러오기
     json.forEach((v) => {
-      //태그 변수에 할당
       const movieBox = document.createElement('a');
       const movieInfo = document.createElement('div');
       const title = document.createElement('h2');
-      // 클래스명 추가
       movieBox.classList.add('movieBox');
       movieInfo.classList.add('movieInfo');
 
       //a 태그로 만들어진 movieBox에 href 추가하기
       movieBox.href = `#`;
 
-      //노드 이어주기
       movieBoxSet.append(movieBox);
       movieBox.append(movieInfo, title);
-      //api에서 불러오기
+
       movieInfo.style.backgroundImage = `url(${v.image})`;
       title.textContent = `${v.title}`;
 
@@ -39,12 +35,12 @@ fetch('https://ghibliapi.vercel.app/films')
       const timeBox = document.createElement('div');
       const runningTime = document.createElement('span');
       const time = document.createElement('span');
-      //노드 이어주기
+
       movieInfo.append(title2, div);
       div.append(dateBox, timeBox);
       dateBox.append(dateTitle, date);
       timeBox.append(runningTime, time);
-      //api에서 불러오기
+
       title2.textContent = `${v.title}`;
       dateTitle.textContent = `release date`;
       date.textContent = `${v.release_date}`;

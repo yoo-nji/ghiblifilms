@@ -1,4 +1,4 @@
-//스크롤시 헤더 색상, 투병도 변경
+//스크롤시 헤더 색상, 투명도 변경
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');
   if (window.scrollY > 250) {
