@@ -28,6 +28,7 @@ $reviewFormBt.addEventListener("click", (e) => {
   const $reviewBox = document.createElement('div');
   $reviewBox.id = 'reviewBox';
 
+  const reviewValue = $reviewInput.value;
   const $reviewText = document.createElement('div');
   $reviewText.classList.add('reviewText');
   const $newTextId = document.createElement('div');
@@ -37,6 +38,13 @@ $reviewFormBt.addEventListener("click", (e) => {
 
   const $div = document.createElement('div');
   const $newData = document.createElement('span');
+  const currentDate = new Date();
+  // 현재 날짜 가져오기
+  const formattedDate = currentDate.toLocaleDateString('ko-KR');
+  // 현재 시간 가져오기
+  const formattedTime = currentDate.toLocaleTimeString('ko-KR');
+  $newData.textContent = `${formattedDate} ${formattedTime}`;
+
   const $newreportButton = document.createElement('button');
   $newreportButton.textContent = '신고';
 
