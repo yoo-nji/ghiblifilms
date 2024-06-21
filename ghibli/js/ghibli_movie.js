@@ -1,5 +1,5 @@
 // 지브리 영화검색페이지
-
+const searchInput = document.querySelector('#ghibliSearch');
 const movieBoxSet = document.querySelector('#movieBoxSet');
 const movieTitles = document.querySelector('#movieTitles');
 
@@ -55,6 +55,22 @@ fetch('https://ghibliapi.vercel.app/films')
       //클릭시 이동
       movieBox.addEventListener('click', () =>
         location.href = `/portfolio/ghibli/html/movie_details.html`);
+
+    });
+
+    //검색함수
+    searchInput.addEventListener('input', function () {
+      const query = searchInput.value.toLowerCase();
+      const movies = document.querySelectorAll('.movieBox');
+
+      movies.forEach(movie => {
+        const title = movie.querySelector('h2').textContent.toLowerCase();
+        if (title.includes(query)) {
+          movie.style.display = '';
+        } else {
+          movie.style.display = 'none';
+        }
+      });
     });
   })
   .catch(error => console.error('Error:', error));
