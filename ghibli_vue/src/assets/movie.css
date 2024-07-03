@@ -1,0 +1,117 @@
+/* 검색박스 */
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 0 20px 0;
+  margin: 0 auto;
+  gap: 100px;
+  width: 920px;
+}
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.searchBox img {
+  width: 280px;
+  height: 136px;
+}
+.searchBox > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 40px;
+  width: 560px;
+  height: 50px;
+  background-color: #fff;
+  font-size: 30px;
+  color: #565656;
+  border-radius: 40px;
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24) inset;
+}
+.searchBox > div > input {
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+}
+
+/* 영화박스 */
+#movieBoxSet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+#movieBoxSet > span {
+  margin: 0 auto;
+  color: #000;
+}
+.movieBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.movieBox > div {
+  display: flex;
+  padding: 150px 20px 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  background: url('#') no-repeat center center / cover;
+  background-color: #e4e4e4;
+}
+/* 영화 상세정보 호버 */
+.movieInfo {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #FFF;
+}
+.movieInfo > div {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+}
+.movieInfo > div > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.movieInfo span {
+  color: #D8D8D8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.movieBox h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+}
+
+/* 호버이벤트 */
+.movieBox:hover > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+}
+.movieBox:hover .movieInfo, .movieBox:hover .movieInfo > div {
+  display: flex;
+}

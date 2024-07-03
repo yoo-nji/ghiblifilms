@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* 헤더 pc, 태블릿 가로 1024- */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+/* Patrick Hand 폰트 - 명대사 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Montserrat 폰트 - */
+@import url("https://use.typekit.net/lky0fuw.css");
+/* notosans 어도비 폰트 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+/* font-awsome */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+/* 구글아이콘 thin */
+
+/* 메인페이지 pc, 태블릿 */
+
+/* 초기값 설정 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid rgb(0, 115, 157); */
+}
+:root {
+  font-family: noto-sans, sans-serif;
+  background-color: #f5f5f5;
+}
+input,
+button {
+  font-family: "Noto Sans KR", sans-serif;
+  border: none;
+  outline: none;
+}
+/* a 기본속성 제거 */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 헤더 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 50px;
+  background: #214436;
+  position: sticky;
+  top: 0px;
+  z-index: 2000;
+  font-family: "Montserrat", sans-serif;
+}
+header img {
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+.navSet {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+}
+.navSet a:hover {
+  border-bottom: 2px solid #fff;
+}
+.loginBt {
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.loginBt:hover {
+  background-color: #2b2b2b;
+}
+header a {
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+}
+header.scroll {
+  background: rgba(0, 0, 0, 0.8);
+}
+header .navIco {
+  display: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
