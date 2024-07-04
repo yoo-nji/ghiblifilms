@@ -12,4 +12,15 @@
     <span class="material-symbols-outlined navIco">menu</span>
   </header>
 </template>
+<script>
+//스크롤시 헤더 색상, 투명도 변경
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('header');
+  if (window.scrollY > 250) {
+    header.classList.add('scroll');
+  } else {
+    header.classList.remove('scroll');
+  }
+});
+</script>
 
