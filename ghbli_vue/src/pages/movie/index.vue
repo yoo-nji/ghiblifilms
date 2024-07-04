@@ -17,24 +17,28 @@
     </div>
     <div id="movieBoxSet">
       <span v-if="!movies.length"> 영화 정보를 불러오는 중입니다...</span>
-      <div v-else v-for="movie in movies" :key="movie.id" class="movieBox">
-        <div
-          class="movieInfo"
-          :style="{ backgroundImage: 'url(' + movie.image + ')' }"
-        >
-          <div>{{ movie.title }}</div>
-          <div>
-            <div>
-              <span>release date</span>
-              <span>{{ movie.release_date }}</span>
+      <div v-else v-for="movie in movies" :key="movie.id">
+        <router-link :to="`/movie/${movie.id}`" class="custom-link">
+          <div class="movieBox">
+            <div
+              class="movieInfo"
+              :style="{ backgroundImage: 'url(' + movie.image + ')' }"
+            >
+              <div>{{ movie.title }}</div>
+              <div>
+                <div>
+                  <span>release date</span>
+                  <span>{{ movie.release_date }}</span>
+                </div>
+                <div>
+                  <span>running time</span>
+                  <span>{{ movie.running_time }}</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span>running time</span>
-              <span>{{ movie.running_time }}</span>
-            </div>
+            <h2>{{ movie.title }}</h2>
           </div>
-        </div>
-        <h2>{{ movie.title }}</h2>
+        </router-link>
       </div>
     </div>
   </div>

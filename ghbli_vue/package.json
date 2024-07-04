@@ -1,5 +1,5 @@
 {
-  "name": "ghibli_vue",
+  "name": "ghbli_vue2",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -32,6 +32,6 @@
     "vite": "^5.1.5",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vite-plugin-vuetify": "^2.0.3",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.3.0"
   }
 }

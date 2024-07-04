@@ -15,7 +15,7 @@
   gap: 50px;
 }
 .searchBox img {
-  width: 280px;
+  width: 240px;
   height: 136px;
 }
 .searchBox > div {
@@ -58,6 +58,7 @@
   flex-direction: column;
   gap: 8px;
   width: 200px;
+  height: 366px;
   border-radius: 10px;
   padding: 5px;
   background-color: #FFF;
