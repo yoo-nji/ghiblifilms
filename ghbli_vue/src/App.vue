@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main style="background: #f5f5f5">
       <Header />
       <router-view />
     </v-main>
@@ -9,5 +9,7 @@
 <script setup>
 // Header 컴포넌트 불러오기
 import Header from "@/components/ghibliHeader.vue";
-import "@/assets/header.css";
 </script>
+<style>
+@import "@/assets/header.css";
+</style>
