@@ -1,5 +1,7 @@
 /* 영화상세페이지 pc, 태블릿 가로 1024- */
-
+* {
+  font-family: noto-sans, sans-serif;
+}
 /* sec */
 .sec {
   display: flex;

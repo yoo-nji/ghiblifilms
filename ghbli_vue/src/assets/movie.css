@@ -1,4 +1,8 @@
 /* 검색박스 */
+* {
+  font-family: noto-sans, sans-serif;
+}
+
 .sec {
   display: flex;
   flex-direction: column;
