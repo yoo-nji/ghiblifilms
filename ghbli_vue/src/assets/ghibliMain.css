@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* 메인페이지 pc, 태블릿 */
+
+/* 메인 헤더 css 따로 설정 */
+header {
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Patrick Hand 폰트 */
+.sec {
+  font-family: "Patrick Hand"
+}
+
+/* sec */
+.sec {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+#mainSec {
+  width: 100%;
+  background: url(@/assets/img/ghibli.png) no-repeat 50%/40%;
+}
+.sloganBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  margin: 20px;
+  min-width: 600px;
+  max-width: 800px;
+  position: absolute;
+  top: 60%;
+  /* transform: translateY(-50%); */
+  color: #FFF;
+}
+.sloganText {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+}
+.sloganText::after, .sloganText::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+.sloganText::after {
+  content: "\f10e";
+}
+.sloganText::before {
+  content: "\f10d";
+}
+.sloganText2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
