@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 /* 메인페이지 pc, 태블릿 */
 
+html {
+  overflow-y: auto !important
+}
+
 /* 메인 헤더 css 따로 설정 */
 header {
   font-family: "Montserrat", sans-serif;
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 /* Patrick Hand 폰트 */
 .sec {
   font-family: "Patrick Hand"
+
 }
 
 /* sec */
 .sec {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh);
 }
+
 #mainSec {
   width: 100%;
   background: url(@/assets/img/ghibli.png) no-repeat 50%/40%;

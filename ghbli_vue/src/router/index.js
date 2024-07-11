@@ -11,7 +11,6 @@ import { setupLayouts } from 'virtual:generated-layouts';
 // import About from '@/pages/About.vue';
 // import Members from '@/pages/Members.vue';
 
-
 const router = createRouter({
   history: createWebHistory(),
   extendRoutes: setupLayouts,
