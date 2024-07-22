@@ -24,7 +24,7 @@ header {
 }
 #mainSec {
   width: 100%;
-  background: url(/portfolio/ghibli/img/ghibli.png) no-repeat 50%/40%;
+  background: url(/GhibliFilms/ghibli/img/ghibli.png) no-repeat 50%/40%;
 }
 .sloganBox {
   display: flex;

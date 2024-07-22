@@ -10,7 +10,7 @@
 .topBanner {
   width: 100%;
   height: 400px;
-  background: url("/portfolio/ghibli/img/banner.png") no-repeat 50%/cover;
+  background: url("/GhibliFilms/ghibli/img/banner.png") no-repeat 50%/cover;
   /* 텍스트 감추기 */
   text-indent: -9000px;
   overflow: hidden;
@@ -38,7 +38,7 @@
   position: absolute;
   top: -100px;
   left: 0px;
-  background: url("/portfolio/ghibli/img/totoro.png") no-repeat 50%/cover;
+  background: url("/GhibliFilms/ghibli/img/totoro.png") no-repeat 50%/cover;
   /* 텍스트 감추기 */
   text-indent: -9000px;
   overflow: hidden;
