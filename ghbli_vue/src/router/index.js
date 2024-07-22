@@ -12,7 +12,7 @@ import { setupLayouts } from 'virtual:generated-layouts';
 // import Members from '@/pages/Members.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(GhibliFilms),
   extendRoutes: setupLayouts,
   routes: [
     // { path: '/', component: Movie, },
