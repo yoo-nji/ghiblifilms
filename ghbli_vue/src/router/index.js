@@ -23,7 +23,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/btest/'),  // GitHub Pages URL 경로 설정
+  history: createWebHistory('/GhibliFilms/'),  // GitHub Pages URL 경로 설정
   routes: setupLayouts(routes),
 });
 
