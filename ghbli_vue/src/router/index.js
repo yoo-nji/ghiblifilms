@@ -1,6 +1,5 @@
 
-// import { createRouter, createWebHistory } from 'vue-router';
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import { setupLayouts } from 'virtual:generated-layouts';
 import Main from '@/pages/Main.vue';
 import Movies from '@/pages/Movies.vue';
@@ -23,12 +22,8 @@ const routes = [
   },
 ];
 
-// const router = createRouter({
-//   history: createWebHistory('/GhibliFilms/'),  // GitHub Pages URL 경로 설정
-//   routes: setupLayouts(routes),
-// });
 const router = createRouter({
-  history: createWebHashHistory('/GhibliFilms/'),  // GitHub Pages URL 경로 설정
+  history: createWebHistory('/GhibliFilms/'),  // GitHub Pages URL 경로 설정
   routes: setupLayouts(routes),
 });
 
