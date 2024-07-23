@@ -3,7 +3,7 @@
        <router-link to=/>
        <img src="@/assets/img/home_ico.png" alt="#" /></router-link>
     <div class="navSet">
-      <router-link to=/movie> MOVIE</router-link>
+      <router-link to=/movies> MOVIE</router-link>
       <a href="#">HISTORY</a>
       <!-- <a href="#">GAME</a> -->
       <router-link to=/trailer>TRAILER</router-link>

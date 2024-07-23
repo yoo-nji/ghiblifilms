@@ -17,7 +17,7 @@
       <span v-if="loading">Loading movies...</span>
       <span v-else-if="!filteredMovies.length">No search results...</span>
       <div v-else v-for="movie in filteredMovies" :key="movie.id">
-        <router-link :to="`/movie/${movie.id}`">
+        <router-link :to="`/Movies/${movie.id}`">
           <div class="movieBox">
             <div
               class="movieInfo"
