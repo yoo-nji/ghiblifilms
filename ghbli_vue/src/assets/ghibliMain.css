@@ -24,7 +24,7 @@ header {
 .sec {
   display: flex;
   justify-content: center;
-  height: calc(100vh);
+  height: 100vh;
 }
 
 #mainSec {
