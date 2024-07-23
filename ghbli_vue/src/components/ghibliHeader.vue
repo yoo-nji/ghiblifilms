@@ -29,7 +29,9 @@ const signInWithGithub = async () => {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
     options: {
-      redirectTo: window.location.href, // 현재 페이지로 리다이렉트
+      // redirectTo: window.location.href, // 현재 페이지로 리다이렉트
+      redirectTo: 'https://yoo-nji.github.io/GhibliFilms/', // 💥빌드용
+
     },
   });
   if (error) {
@@ -45,7 +47,11 @@ const signOut = async () => {
   } else {
     isLoggedIn.value = false;
     //페이지 새로고침
-    window.location.reload();
+    // window.location.reload();
+    //💥빌드용
+         const redirectTo = 'https://yoo-nji.github.io/GhibliFilms/'; 
+    console.log('Redirecting to:', redirectTo);
+    window.location.href = redirectTo;
   }
 };
 
