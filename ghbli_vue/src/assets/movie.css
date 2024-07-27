@@ -165,7 +165,7 @@ a:visited {
     height: 104px;
   }
   .searchBox > div {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
   }
   /* 영화박스 */
