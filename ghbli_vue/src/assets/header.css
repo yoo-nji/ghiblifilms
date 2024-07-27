@@ -91,8 +91,8 @@ header .navIco {
 }
 
 /* 반응형 */
+/* 헤더 태블릿, 모바일(min320px)*/
 @media (max-width: 767px) {
-  /* 헤더 태블릿, 모바일(min320px)*/
   header.on {
     flex-direction: column;
     justify-content: center;

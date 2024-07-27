@@ -15,7 +15,7 @@ a:visited {
   padding: 90px 0 20px 0;
   margin: 0 auto;
   gap: 100px;
-  width: 920px;
+  max-width: 920px;
 }
 .searchBox {
   display: flex;
@@ -129,4 +129,106 @@ a:visited {
 }
 .movieBox:hover .movieInfo, .movieBox:hover .movieInfo > div {
   display: flex;
+}
+
+/* 반응형 */
+/* 영화검색페이지 태블릿 768-1023 */
+@media (max-width: 1023px) {
+
+  /* 검색박스 */
+  .sec {
+    width: 100%;
+    padding-inline: 30px;
+    gap: 80px;
+  }
+  .searchBox > div > input {
+    font-size: 16px;
+  }
+
+  /* 영화박스 */
+  #movieBoxSet {
+    gap: 20px 20px;
+    margin: 0 auto;
+    width: 640px;
+  }
+}
+
+/* 영화검색페이지 태블릿, 모바일 가로 480-767 */
+@media (max-width: 767px) {
+
+  .sec {
+    padding: 50px 30px;
+    gap: 40px;
+  }
+  .searchBox img {
+    width: 142px;
+    height: 104px;
+  }
+  .searchBox > div {
+    width: 100%;
+    max-width: 450px;
+  }
+  /* 영화박스 */
+  #movieBoxSet {
+    width: 420px;
+  }
+}
+
+/* 영화검색페이지 모바일 320-480 */
+@media (max-width: 480px) {
+
+  body {
+    min-width: 320px;
+  }
+
+  /* 검색박스 */
+  .sec {
+    padding-inline: 10px;
+    gap: 40px;
+  }
+  .searchBox > div {
+    height: 40px;
+  }
+  .searchBox > div > input {
+    font-size: 13px;
+  }
+
+  /* 영화박스 */
+  #movieBoxSet {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 284px;
+  }
+  .movieBox {
+    width: 137px;
+    height: auto;
+  }
+  .movieBox > div {
+    height: 200px;
+    padding: 80px 10px 0;
+  }
+  .movieBox h2 {
+    font-size: 14px;
+    padding: 1px 0px;
+    height: 50px;
+  }
+
+  /* 영화 상세정보 호버 */
+  .movieInfo {
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+  }
+  .movieInfo > div {
+    height: auto;
+  }
+  .movieInfo > div > div {
+    justify-content: space-between;
+  }
+  .movieInfo span {
+    color: #D8D8D8;
+    font-size: 10px;
+    line-height: 15px;
+  }
 }

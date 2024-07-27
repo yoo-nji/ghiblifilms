@@ -190,3 +190,124 @@
 .btnBox > button:last-child:hover {
   background: #373737;
 }
+
+
+/* 반응형 */
+/* 영화상세페이지 태블릿 768-1023 */
+@media (max-width: 1023px) {
+
+  /* sec */
+  .sec {
+    width: 100%;
+  }
+
+  /* inner */
+  .inner {
+    width: 100%;
+  }
+}
+
+/* 영화상세페이지 태블릿, 모바일 가로 480-767 */
+@media (max-width: 767px) {
+
+  /* sec */
+  .topBanner {
+    height: 250px;
+  }
+
+  /* inner */
+  .inner {
+    padding: 20px 30px;
+    gap: 40px;
+  }
+
+  .movieDetails {
+    width: 100%;
+    display: flex;
+    padding: 170px 0 0 0;
+    gap: 10px;
+  }
+  .moviePoster {
+    width: 166px;
+    height: 249px;
+    top: -108px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* content */
+  .content {
+    gap: 15px;
+  }
+  .content > h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .content > .detailsText {
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .detailsText div:last-child > div {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .detailsText div:last-child > div > span:first-child {
+    width: 70px;
+  }
+
+  /* review */
+  .review {
+    gap: 20px;
+  }
+  .reviewInputBox > h2 {
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  /* review form */
+  #reviewForm {
+    padding: 10px 30px;
+    gap: 10px;
+  }
+
+  /* review box */
+  .reviewBoxSet {
+    gap: 20px;
+  }
+}
+
+/* 영화상세페이지 모바일 320-480 */
+@media (max-width: 480px) {
+
+  /* sec */
+  .sec {
+    min-width: 320px;
+  }
+  .topBanner {
+    height: 200px;
+  }
+
+  /* inner */
+  .inner {
+    padding: 20px 20px;
+  }
+
+  .movieDetails {
+    padding: 120px 0 0 0;
+    gap: 10px;
+  }
+  .moviePoster {
+    width: 132px;
+    height: 198px;
+  }
+
+  /* review box */
+  #reviewBox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 30px;
+  }
+}
