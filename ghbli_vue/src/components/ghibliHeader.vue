@@ -9,7 +9,7 @@
       <router-link to=/trailer @click.native="closeNav">TRAILER</router-link>
     </div>
      <a v-if="!isLoggedIn" class="loginBt" :class="{ on: navOn }" @click="signInWithGithub">LOGIN</a>
-    <a v-else class="loginBt"  @click="signOut" >LOGOUT</a>
+    <a v-else class="loginBt"  @click="signOut" :class="{ on: navOn }">LOGOUT</a>
     <span class="material-symbols-outlined navIco" @click="toggleNav"> {{ navIcon }}</span>
   </header>
 </template>
