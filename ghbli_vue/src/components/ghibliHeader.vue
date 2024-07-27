@@ -1,16 +1,16 @@
 <template>
-  <header :class="headerClass">
-       <router-link to=/>
+  <header :class="[headerClass, { on: navOn }]">
+       <router-link to=/ @click.native="closeNav">
        <img src="@/assets/img/home_ico.png" alt="#" /></router-link>
-    <div class="navSet">
-      <router-link to=/movies> MOVIE</router-link>
-      <a href="#">HISTORY</a>
+    <div class="navSet" :class="{ on: navOn }">
+      <router-link to=/movies @click.native="closeNav"> MOVIE</router-link >
+      <!-- <a href="#" >HISTORY</a> -->
       <!-- <a href="#">GAME</a> -->
-      <router-link to=/trailer>TRAILER</router-link>
+      <router-link to=/trailer @click.native="closeNav">TRAILER</router-link>
     </div>
-     <a v-if="!isLoggedIn" class="loginBt" @click="signInWithGithub">LOGIN</a>
-    <a v-else class="logoutBt" @click="signOut">LOGOUT</a>
-    <span class="material-symbols-outlined navIco">menu</span>
+     <a v-if="!isLoggedIn" class="loginBt" :class="{ on: navOn }" @click="signInWithGithub">LOGIN</a>
+    <a v-else class="logoutBt"  @click="signOut">LOGOUT</a>
+    <span class="material-symbols-outlined navIco" @click="toggleNav"> {{ navIcon }}</span>
   </header>
 </template>
 <script setup>
@@ -23,6 +23,9 @@ const props = defineProps({
 });
 
 const isLoggedIn = ref(false); // 로그인 상태를 저장하는 변수
+const navOn = ref(false); // 네비게이션 토글 상태
+const navIcon = ref('menu'); // 햄버거 아이콘
+
 
 // GitHub 로그인 함수
 const signInWithGithub = async () => {
@@ -65,6 +68,19 @@ const checkLogin = async () => {
 onMounted(() => {
   checkLogin();
 });
+
+// 네비게이션 토글 함수
+const toggleNav = () => {
+  navOn.value = !navOn.value;
+  navIcon.value = navIcon.value === 'close' ? 'menu' : 'close';
+};
+
+// 네비게이션 닫기 함수
+const closeNav = () => {
+  navOn.value = false;
+  navIcon.value = 'menu';
+};
+
 
 //스크롤시 헤더 색상, 투명도 변경
 window.addEventListener('scroll', function () {
