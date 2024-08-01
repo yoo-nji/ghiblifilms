@@ -28,7 +28,7 @@ function setRandomBackground() {
 }
 
 onMounted(() => {
-  console.log(slogan); // 콘솔에 JSON 데이터 출력
+  // console.log(slogan); // 콘솔에 JSON 데이터 출력
   setRandomBackground();
 });
 </script>

@@ -49,7 +49,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const movieId = route.params.id;
-console.log("movieId:", movieId.value);
+// console.log("movieId:", movieId.value);
 const movie = ref(null);
 // const reviews = ref([]);
 

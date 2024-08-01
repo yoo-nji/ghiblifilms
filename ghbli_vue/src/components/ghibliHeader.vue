@@ -4,7 +4,7 @@
        <img src="@/assets/img/home_ico.png" alt="#" /></router-link>
     <div class="navSet" :class="{ on: navOn }">
       <router-link to=/movies @click.native="closeNav"> MOVIE</router-link >
-      <!-- <a href="#" >HISTORY</a> -->
+       <router-link to=/history @click.native="closeNav"> HISTORY</router-link >
       <!-- <a href="#">GAME</a> -->
       <router-link to=/trailer @click.native="closeNav">TRAILER</router-link>
     </div>
