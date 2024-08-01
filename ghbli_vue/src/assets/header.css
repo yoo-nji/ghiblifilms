@@ -71,6 +71,7 @@ header img {
   align-items: center;
   border-radius: 10px;
   border: 1px solid #fff;
+  color: #fff;
 }
 .loginBt:hover {
   background-color: #2b2b2b;
