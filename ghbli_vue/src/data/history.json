@@ -1,42 +1,52 @@
 [
   {
     "title": "Castle in the Sky",
-    "year": "1986"
+    "year": "1986",
+    "image": "assets/img/history_1.png"
   },
   {
     "title": "My Neighbor Totoro",
-    "year": "1988"
+    "year": "1988",
+    "image": "assets/img/history_2.png"
   },
   {
     "title": "Kiki's Delivery Service",
-    "year": "1989"
+    "year": "1989",
+    "image": "assets/img/history_3.png"
   },
   {
     "title": "Porco Rosso",
-    "year": "1992"
+    "year": "1992",
+    "image": "assets/img/history_4.png"
   },
   {
     "title": "Whisper of the Heart",
-    "year": "1995"
+    "year": "1995",
+    "image": "assets/img/history_5.png"
   },
   {
     "title": "Princess Mononoke",
-    "year": "1997"
+    "year": "1997",
+    "image": "assets/img/history_6.png"
   },
   {
     "title": "Spirited Away",
-    "year": "2001"
+    "year": "2001",
+    "image": "assets/img/history_7.png"
   },
   {
     "title": "The Cat Returns",
-    "year": "2002"
+    "year": "2002",
+    "image": "assets/img/history_8.png"
   },
   {
     "title": "Howl's Moving Castle",
-    "year": "2004"
+    "year": "2004",
+    "image": "assets/img/history_9.png"
   },
   {
     "title": "Ponyo",
-    "year": "2008"
+    "year": "2008",
+    "image": "assets/img/history_10.png"
   }
 ]

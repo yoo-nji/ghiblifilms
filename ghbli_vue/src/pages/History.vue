@@ -9,10 +9,7 @@
         :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
       >
         <div>
-          <img
-            :src="`/GhibliFilms/./src/assets/img/history_${index + 1}.png`"
-            alt="history image"
-          />
+          <img :src="getImagePath(item.image)" alt="history image" />
           <div class="historyTitle">{{ item.title }}</div>
           <div class="historyYear">{{ item.year }}</div>
         </div>
@@ -26,6 +23,11 @@ import { onMounted } from "vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import history from "@/data/history.json";
+
+const getImagePath = (path) => {
+  return new URL(`../${path}`, import.meta.url).href;
+};
+
 onMounted(() => {
   AOS.init({
     duration: 600, // 지속 시간
