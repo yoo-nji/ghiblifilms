@@ -10,7 +10,7 @@
       >
         <div>
           <img
-            :src="`./src/assets/img/history_${index + 1}.png`"
+            :src="`/GhibliFilms/./src/assets/img/history_${index + 1}.png`"
             alt="history image"
           />
           <div class="historyTitle">{{ item.title }}</div>
@@ -29,7 +29,7 @@ import history from "@/data/history.json";
 onMounted(() => {
   AOS.init({
     duration: 600, // 지속 시간
-    offset: 80, // 시작 지점
+    offset: 90, // 시작 지점
     delay: 100, // 지연 시간
   });
 });
