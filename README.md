@@ -2,7 +2,7 @@
   
 >기여도: 100% 개인프로젝트<br>
 기간: 2024.06.10 ~ 2024.07.16<br>
-배포: [yoo-nji.github.io/GhibliFilms/](https://yoo-nji.github.io/GhibliFilms/)
+배포: [yoo-nji.github.io/GhibliFilms/](https://yoo-nji.github.io/ghiblifilms/)
 
 ## 프로젝트 개요
 >Ghibli Films는 Studio Ghibli API를 바탕으로 지브리 영화의 정보를 조회하고 지브리 영화 목록과 각 영화별 상세 페이지에서 댓글로 감상문을 공유할 수 있는 웹 애플리케이션입니다.
