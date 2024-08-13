@@ -33,7 +33,7 @@ const signInWithGithub = async () => {
     provider: 'github',
     options: {
       // redirectTo: window.location.href, // 현재 페이지로 리다이렉트
-      redirectTo: 'https://yoo-nji.github.io/GhibliFilms/', // 💥빌드용
+      redirectTo: 'https://yoo-nji.github.io/ghiblifilms/', // 💥빌드용
 
     },
   });
@@ -52,7 +52,7 @@ const signOut = async () => {
     //페이지 새로고침
     // window.location.reload();
     //💥빌드용
-         const redirectTo = 'https://yoo-nji.github.io/GhibliFilms/'; 
+         const redirectTo = 'https://yoo-nji.github.io/ghiblifilms/'; 
     console.log('Redirecting to:', redirectTo);
     window.location.href = redirectTo;
   }

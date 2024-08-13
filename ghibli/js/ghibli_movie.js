@@ -54,7 +54,7 @@ fetch('https://ghibliapi.vercel.app/films')
 
       //클릭시 이동
       movieBox.addEventListener('click', () =>
-        location.href = `/portfolio/ghibli/html/movie_details.html`);
+        location.href = `/ghiblifilms/ghibli/html/movie_details.html`);
 
     });
 

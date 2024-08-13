@@ -28,7 +28,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/GhibliFilms/'),  // GitHub Pages URL 경로 설정
+  history: createWebHistory('/ghiblifilms/'),  // GitHub Pages URL 경로 설정
   routes: setupLayouts(routes),
 });
 

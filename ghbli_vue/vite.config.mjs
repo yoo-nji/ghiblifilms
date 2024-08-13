@@ -13,7 +13,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/GhibliFilms/',
+  base: '/ghiblifilms/',
   plugins: [
     VueRouter(),
     Layouts(),

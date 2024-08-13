@@ -18,7 +18,7 @@ header {
   align-items: center;
 }
 #mainSec {
-  background: url(/GhibliFilms/ghibli/img/ghibli.png) no-repeat 50%/20%;
+  background: url(/ghiblifilms/ghibli/img/ghibli.png) no-repeat 50%/20%;
   height: 300px;
 }
 .sloganBox {
